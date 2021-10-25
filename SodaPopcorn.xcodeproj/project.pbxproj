@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF59906F271C93980084E52E /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = CF59906E271C93980084E52E /* Reachability */; };
+		CFBB23A0271CB53900956B49 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB239F271CB53900956B49 /* RootViewController.swift */; };
+		CFBB23A6271CB87F00956B49 /* ReachabilityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB23A5271CB87F00956B49 /* ReachabilityObserver.swift */; };
+		CFBB23B1271CB97200956B49 /* ReachabilityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB23B0271CB97200956B49 /* ReachabilityHandler.swift */; };
 		D9322E8126E3B00900522AFB /* MovieNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9322E8026E3B00900522AFB /* MovieNetworkService.swift */; };
 		D9322E8326E3B41D00522AFB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9322E8226E3B41D00522AFB /* Result.swift */; };
 		D9322E8526E3B45100522AFB /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9322E8426E3B45100522AFB /* NetworkResponse.swift */; };
@@ -119,6 +123,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CFBB239F271CB53900956B49 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CFBB23A5271CB87F00956B49 /* ReachabilityObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserver.swift; sourceTree = "<group>"; };
+		CFBB23B0271CB97200956B49 /* ReachabilityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHandler.swift; sourceTree = "<group>"; };
 		D9322E8026E3B00900522AFB /* MovieNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkService.swift; sourceTree = "<group>"; };
 		D9322E8226E3B41D00522AFB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D9322E8426E3B45100522AFB /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
@@ -192,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9449B3E26E4E9E3006B3856 /* Networking.framework in Frameworks */,
+				CF59906F271C93980084E52E /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +235,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFBB23AB271CB96500956B49 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB23B0271CB97200956B49 /* ReachabilityHandler.swift */,
+				CFBB23A5271CB87F00956B49 /* ReachabilityObserver.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		D9322E7F26E3AFDC00522AFB /* ServiceHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +316,7 @@
 				D941ACD126E279EB00018E57 /* Storage */,
 				D941ACD226E27A0100018E57 /* UI */,
 				D975D3C42719C41300C81E35 /* Utilities */,
+				CFBB23AB271CB96500956B49 /* Reachability */,
 			);
 			path = SodaPopcorn;
 			sourceTree = "<group>";
@@ -476,6 +494,7 @@
 			children = (
 				D97BCA6A26EFDCA300A018EC /* BaseViewController.swift */,
 				D9410B752704B03A0040D6F2 /* NavigationController.swift */,
+				CFBB239F271CB53900956B49 /* RootViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -615,6 +634,9 @@
 				D9449B3D26E4E9E3006B3856 /* PBXTargetDependency */,
 			);
 			name = SodaPopcorn;
+			packageProductDependencies = (
+				CF59906E271C93980084E52E /* Reachability */,
+			);
 			productName = SodaPopcorn;
 			productReference = D941AC7E26E2787100018E57 /* SodaPopcorn.app */;
 			productType = "com.apple.product-type.application";
@@ -732,6 +754,9 @@
 				es,
 			);
 			mainGroup = D941AC7526E2787100018E57;
+			packageReferences = (
+				CF59906D271C93980084E52E /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = D941AC7F26E2787100018E57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -817,6 +842,7 @@
 				D9E6D38226E8FC28000292D4 /* PlistReaderManager.swift in Sources */,
 				D941ACC826E278EF00018E57 /* NetworkManager.swift in Sources */,
 				D9323E2C26E30F7E00DE497B /* MovieApiResponse.swift in Sources */,
+				CFBB23B1271CB97200956B49 /* ReachabilityHandler.swift in Sources */,
 				D9BBD68A26E71F6900A2C24D /* UIFont+Style.swift in Sources */,
 				D985656926E59B5300457264 /* NewMoviesListVC.swift in Sources */,
 				D941ACC726E278EF00018E57 /* JSONParameterEncoder.swift in Sources */,
@@ -834,6 +860,7 @@
 				D9CB5B2A271C71C4005C542C /* Alert.swift in Sources */,
 				D9B89D2F26F829C0006E7D5E /* Coordinator.swift in Sources */,
 				D941ACE926E27AA800018E57 /* Movie.swift in Sources */,
+				CFBB23A0271CB53900956B49 /* RootViewController.swift in Sources */,
 				D9449B4B26E4EFA2006B3856 /* AnyPublisher+Create.swift in Sources */,
 				D941AC8426E2787100018E57 /* SceneDelegate.swift in Sources */,
 				D941ACCD26E278EF00018E57 /* EndPointType.swift in Sources */,
@@ -858,6 +885,7 @@
 				D9C97C7E26EADF0100151E2D /* MovieEntity+CoreDataClass.swift in Sources */,
 				D941ACCB26E278EF00018E57 /* HTTPMethod.swift in Sources */,
 				D941ACC926E278EF00018E57 /* MovieEndpoint.swift in Sources */,
+				CFBB23A6271CB87F00956B49 /* ReachabilityObserver.swift in Sources */,
 				D9B89D3126F829F6006E7D5E /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1341,6 +1369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF59906D271C93980084E52E /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF59906E271C93980084E52E /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF59906D271C93980084E52E /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D941AC8726E2787100018E57 /* SodaPopcorn.xcdatamodeld */ = {

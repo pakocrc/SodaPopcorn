@@ -23,7 +23,7 @@ final class HomeCoordinator: Coordinator {
 	private var cancellable = Set<AnyCancellable>()
 
 	init(window: UIWindow) {
-		self.parentViewController = BaseViewController()
+		self.parentViewController = RootViewController()
 
 		self.window = window
 		self.window.rootViewController = parentViewController

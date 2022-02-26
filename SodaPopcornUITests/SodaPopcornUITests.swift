@@ -7,6 +7,7 @@
 
 import XCTest
 
+/*
 class SodaPopcornUITests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -40,3 +41,4 @@ class SodaPopcornUITests: XCTestCase {
 //        }
 //    }
 }
+*/
